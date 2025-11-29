@@ -2,11 +2,11 @@
 /* ESTILOS GLOBALES */
 /* ============================= */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #3C4451;
   color: #333;
 }
 h1, h2, h3 {
@@ -83,8 +83,9 @@ ul {
   position: relative;
   top: 0;
   width: 100%;
-  background: #4A6695;
+  background: #1a1a1a;
   z-index: 1000;
+  border-bottom: 4px solid #D5B88F;
 }
 
 .container {
@@ -104,7 +105,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: white;
+  color: #D5B88F;
   font-weight: bold;
   font-size: 1.6rem;
 }
@@ -126,7 +127,7 @@ ul {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: #D5B88F;
 }
 
 .nav-menu {
@@ -135,7 +136,7 @@ ul {
 }
 
 .nav-menu a {
-  color: white;
+  color:  #D5B88F;
   text-decoration: none;
   text-align: center;
   font-size: 16px;
@@ -148,7 +149,7 @@ ul {
 .hero {
   padding: 0;
   margin-bottom: 0;
-  background: #f9f9f9;
+  background: #3C4451;
   border-radius: 0;
   box-shadow: none;
   width: 100%;
@@ -168,18 +169,23 @@ ul {
 .hero-text {
   flex: 1 1 500px;
   min-width: 300px;
+  color: #D5B88F;
 }
 
 .hero-text .h2-inicio {
   font-size: 2.5rem;
-  color: #000;
+  color: #D5B88F;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .hero-text h2 {
   margin-top: 20px;
+  font-weight: bold;
 }
-
+.hero-text p {
+  font-weight : 400;
+}
 .hero-image {
   flex: 1 1 500px;
   min-width: 300px;
@@ -197,14 +203,14 @@ ul {
 /* ============================= */
 #servicios {
   padding: 60px 40px;
-  background: #f0f0f0;
+  background: #3C4451;
   width: 100%;
   box-sizing: border-box;
 }
 
 #servicios h2 {
   text-align: center;
-  color: #000;
+  color: #D5B88F;
   margin-bottom: 40px;
   font-size: 2rem;
 }
@@ -236,8 +242,8 @@ ul {
 }
 
 .servicio.dark {
-  background-color: #4A6695;
-  color: #f9f9f9;
+  background-color: #D5B88F;
+  color: #3C4451;
   cursor: pointer;
 }
 
@@ -246,7 +252,7 @@ ul {
 }
 
 .servicio.claro {
-  background-color: #f9f9f9;
+  background-color: #D5B88F;
   color: #333;
   cursor: pointer;
 }
@@ -270,14 +276,14 @@ ul {
 /* ============================= */
 #nosotros {
   padding: 60px 20px;
-  background: #f9f9f9;
+  background: #3C4451;
   width: 100%;
   box-sizing: border-box;
 }
 
 #nosotros h2 {
   text-align: center;
-  color: #000;
+  color: #D5B88F;
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -290,6 +296,7 @@ ul {
   max-width: 1200px;
   margin: auto;
   gap: 40px;
+  color: #D5B88F;
 }
 
 .nosotros-texto {
@@ -297,6 +304,7 @@ ul {
   min-width: 300px;
   font-size: 1.2rem;
   line-height: 1.6;
+  /* text-align: justify; */
 }
 
 .nosotros-texto strong {
@@ -391,7 +399,7 @@ ul {
 /* CONTACTO */
 /* ============================= */
 .contacto {
-  background: #f0f0f0;
+  background: #1a1a1a;
   padding: 30px 0;
 }
 
@@ -399,9 +407,17 @@ section {
   padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
-  background: #f9f9f9;
+  background: #3C4451;
+  color: #D5B88F;
   margin-bottom: 20px;
   border-radius: 10px;
+}
+
+section h2{
+  font-weight: bold;
+}
+section p{
+  font-weight: 400;
 }
 
 form input, form textarea {
@@ -416,8 +432,10 @@ form input, form textarea {
 form button {
   padding: 10px 20px;
   margin-bottom: 10px;
-  background: #4A6695;
+  background: #D5B88F;
   color: white;
+  /* background: #4A6695;
+  color: white; */
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -426,7 +444,7 @@ form button {
 }
 
 form button:hover {
-  background: #003366;
+  background: #daaa67;
 }
 
 iframe {
@@ -453,8 +471,8 @@ iframe {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #4A6695;
-  color: white;
+  background-color: #1a1a1a;
+  color: #D5B88F;
   font-size: 24px;
   text-align: center;
   text-decoration: none;
@@ -466,11 +484,11 @@ iframe {
 }
 
 .fab:hover {
-  background-color: #003366;
+  background-color: #3C4451;
   transform: scale(1.1);
 }
 .fab:active, #scrollToTop:active {
-  background-color: #4A6695;
+  background-color: #1a1a1a;
 }
 #scrollToTop {
   display: none;
@@ -493,8 +511,8 @@ iframe {
 footer {
   text-align: center;
   padding: 20px;
-  background: #4A6695;
-  color: white;
+  background: #3C4451;
+  color: #D5B88F;
 }
 
 /* ============================= */
@@ -605,4 +623,11 @@ footer {
   .slide {
     flex: 0 0 calc(100% / 2);
   }
+}
+
+.linea-horizontal {
+  width: 100%;
+  height: 4px;
+  background: #D5B88F;
+  margin: auto;
 }
