@@ -615,13 +615,14 @@ footer {
 }
 
 @media (max-width: 979px) {
-  #nosotros .nosotros-contenido:first-of-type {
+  .nosotros-contenido {
     flex-direction: column;
   }
-  #nosotros .nosotros-contenido:first-of-type .nosotros-imagen {
+  .nosotros-texto {
     order: 1;
   }
-  #nosotros .nosotros-contenido:first-of-type .nosotros-texto {
+
+  .nosotros-imagen {
     order: 2;
   }
   .slide {
