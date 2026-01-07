@@ -519,6 +519,10 @@ footer {
 /* MEDIA QUERIES (RESPONSIVE) */
 /* ============================= */
 @media (max-width: 768px) {
+  #nosotros h2 {
+    margin-bottom: 0px;
+  }
+
   .hero-content,
   .nosotros-contenido {
     /* flex-direction: column; */
@@ -591,9 +595,6 @@ footer {
   .servicios-grid a:nth-child(4) {
     order: 3;
   }
-  #nosotros h2 {
-    margin-bottom: 0px;
-  }
 }
 @media (max-width: 576px) {
   .navbar-container{
@@ -614,6 +615,15 @@ footer {
 }
 
 @media (max-width: 979px) {
+  #nosotros .nosotros-contenido:first-of-type {
+    flex-direction: column;
+  }
+  #nosotros .nosotros-contenido:first-of-type .nosotros-imagen {
+    order: 1;
+  }
+  #nosotros .nosotros-contenido:first-of-type .nosotros-texto {
+    order: 2;
+  }
   .slide {
     flex: 0 0 calc(100% / 3);
   }
