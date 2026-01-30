@@ -222,8 +222,10 @@ ul {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  align-items: stretch;
 }
 .servicios-grid a{
+  display: flex;
   text-decoration: none;
 }
 .servicio {
@@ -234,6 +236,7 @@ ul {
   border-radius: 10px;
   gap: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex: 1;
 }
 .servicio .icono {
   font-size: 50px;
@@ -576,16 +579,22 @@ footer {
 
   .servicios-grid {
     grid-template-columns: 1fr;
+    align-items: start;
   }
 
   .servicio {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    flex: initial;
   }
 
   .servicio .icono {
     margin: 0 0 10px 0;
+  }
+
+  .servicios-grid a {
+    display: block;
   }
 
   .servicios-grid a:nth-child(3) {
